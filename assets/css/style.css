@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --maincolor:#ff206e;
+}
+/*start header*/
+.header-content a{
+color:var(--maincolor);
+
+}
+.header{
+  background-image: url(../img/bg_osaka.jpg);
+  background-size: cover;
+  background-position:center ;
+}
+.icon{
+  height: 3rem;
+  width: 3rem;
+}
+.navbar{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+.navbar .nav-link{
+  color:rgba(255, 255, 255, 0.55);
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  color:var(--maincolor);
+}
+.nav-link:focus, .nav-link:hover{
+  color:var(--maincolor);
+}
+.icon{
+  transition:background-color 1s;
+
+}
+.icon:hover{
+  background-color: var(--maincolor);
+}
+/*end header*/
+/*start section about */
+.content{
+  background-image: url(../img/light_dot.jpg);
+}
+.content-text h2{
+  font-weight: 900;
+  letter-spacing: 1rem;
+  font-size: 5rem;
+  color:#cacaca;;
+}
+.content-text h3{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.about-content p:first-of-type{
+  color:var(--maincolor);
+  font-size: 1.2rem;
+}
+/*end section about*/
+/*start sectoion services*/
+.serivice{
+  background-image: url(../img/dark_dot.jpg);
+}
+.serivice-content h2{
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    font-size: 5rem;
+    color:#222;
+}
+.serivice-content h3{
+  color:#fff;
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+.icon-serives{
+  height: 3rem;
+  width: 3rem;
+  background-color:#212529;
+  transition:color 1s;
+
+}
+.icon-serives:hover{
+  color: var(--maincolor) !important;
+}
+.serivice .service-item h3{
+  position: relative;
+}
+.serivice .service-item h3:after{
+  content: "";
+  position: absolute;
+  top:37px;
+  width:10%;
+  left: 50%;
+  height: 4px;
+  transform: translateX(-50%);
+  background-color: var(--maincolor);
+  transition:width 1s ;
+}
+.serivice .service-item:hover h3:after{
+  width:30%;
+}
+/*end sectoion services*/
+/*start client*/
+.carousel-indicators{
+  position: static;
+}
+.carousel-indicators [data-bs-target]{
+  text-indent: 0;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+}
+.client-image img {
+  width:2rem;
+  height:2rem;
+  border-radius: 100%;
+}
+@media screen and (max-width: 600px) {
+  .item-client p{
+    width: 100% !important;
+  }  
+  .card{
+    width:100%;
+    margin: auto;
+  }
+}
+/*end client*/
+/*start project*/
+.nav{
+  justify-content: center;
+}
+.nav .nav-link{
+  color:black;
+}
+.nav-tabs .nav-link{
+  border:none;
+}
+.nav-link:focus, .nav-link:hover {
+  color: var(--maincolor)!important;
+}
+.btn{
+  display: block;
+}
+/*end project*/
